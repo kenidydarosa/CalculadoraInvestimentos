@@ -17,10 +17,8 @@ function generateReturnArrays(
       );
     }
   }
-  const finalReturnRate =
-    returTimeFrame === 'Monthly'
-      ? 1 + returnRate / 100
-      : convertToMonthlyReturnRate(1 + returnRate / 100);
+  const finalReturnRate = returTimeFrame === 'Monthly' ? 1 + returnRate / 100
+                        : convertToMonthlyReturnRate(1 + returnRate / 100);
 
   const finalTimeHorizon =
     timePeriod === 'monthly' ? timeHorizon : timeHorizon * 12;
@@ -39,13 +37,11 @@ function generateReturnArrays(
     timeReference <= finalTimeHorizon;
     timeReference++
   ) {
-    const totalAmount =
-      returnArray[timeReference - 1].totalAmount * finalReturnRate +
-      monthlyContribution;
-    const interestReturns =
-      returnArray[timeReference - 1].totalAmount * finalReturnRate;
+    const totalAmount = returnArray[timeReference - 1].totalAmount * finalReturnRate + monthlyContribution;
+    const interestReturns = returnArray[timeReference - 1].totalAmount * finalReturnRate;
     const investedAmount = startingAmount + monthlyContribution * timeReference;
     const totalInterestReturns = totalAmount - investedAmount;
+
     returnArray.push({
       investedAmount,
       interestReturns,
