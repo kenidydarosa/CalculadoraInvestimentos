@@ -11,9 +11,9 @@
       <h1 class="text-2xl font-bold px-6 py-5 text-center text-white">
         Calculadora de investimentos
       </h1>
-      <form id="investment-form" class="flex-col w-full p-6">
-        <div class="flex w-full flex-col px-4 my-6">
-          <div class="flex">
+      <form id="investment-form" class="flex-col w-full p-4">
+        <div class="flex w-full flex-col px-4 my-4 h-[4.25rem]">
+          <div class="flex border-2 border-gray-800 rounded-lg">
             <input
               type="text"
               value="R$"
@@ -30,8 +30,8 @@
             />
           </div>
         </div>
-        <div class="flex w-full flex-col px-4 my-6">
-          <div class="flex">
+        <div class="flex w-full flex-col px-4 my-4 h-[4.25rem]">
+          <div class="flex border-2 border-gray-800 rounded-lg">
             <input
               type="text"
               value="R$"
@@ -47,8 +47,8 @@
             />
           </div>
         </div>
-        <div class="flex w-full flex-col px-4 my-6">
-          <div class="flex">
+        <div class="flex w-full flex-col px-4 my-4 h-[4.25rem]">
+          <div class="flex border-2 border-gray-800 rounded-lg">
             <input
               type="text"
               value="%"
@@ -72,8 +72,8 @@
             </select>
           </div>
         </div>
-        <div class="flex w-full flex-col px-4 my-6">
-          <div class="flex">
+        <div class="flex w-full flex-col px-4 my-4 h-[4.25rem]">
+          <div class="flex border-2 border-gray-800 rounded-lg">
             <input
               type="text"
               value="%"
@@ -97,8 +97,8 @@
             </select>
           </div>
         </div>
-        <div class="flex w-full flex-col px-4 my-6">
-          <div class="flex">
+        <div class="flex w-full flex-col px-4 my-4 h-[4.25rem]">
+          <div class="flex border-2 border-gray-800 rounded-lg">
             <input
               type="text"
               value="%"
@@ -116,7 +116,7 @@
           </div>
         </div>
       </form>
-      <div class="text-right px-10 py-2 flex">
+      <div class="text-right px-10 py-2 flex bg-gray-800">
         <button
           id="calculate-results"
           class="p-1.5 w-1/2 m-1 bg-gray-700 hover:bg-gray-500 text-white rounded-lg border-2"
@@ -126,6 +126,7 @@
           Calcular
         </button>
         <button
+          id="clear-form"
           class="p-1.5 w-1/2 m-1 bg-gray-700 hover:bg-gray-500 text-white rounded-lg border-2"
         >
           Limpar
