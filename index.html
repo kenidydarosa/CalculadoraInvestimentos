@@ -133,16 +133,21 @@
         </button>
       </div>
     </aside>
-    <main>
-      <section id="charts-container" class="h-full">
-        <div class="h-[36dvh]">
-          <p>Resultado Final</p>
+    <main class="row-span-2 col-span-2">
+      <!-- <section id="charts-container" class="h-full">
+        <div class="h-[40%] flex flex-col items-center pb-10">
+          <p class="font-bold text-lg">Resultado Final</p>
           <canvas id="final-money-distribution"></canvas>
         </div>
-        <div class="h-[56dvh]">
-          <p>Progressão</p>
+        <div class="h-[50%] flex flex-col items-center">
+          <p class="font-bold text-lg">Progressão</p>
           <canvas id="progression"></canvas>
         </div>
+      </section> -->
+      <section id="table-container" class="h-full overflow-y-auto">
+        <p class="font-bold text-lg text-center">Resultados Mensais</p>
+        <table id="results-table" class="w-full max-h-full border border-separate">
+        </table>
       </section>
     </main>
     <script type="module" src="./main.js"></script>
