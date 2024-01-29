@@ -35,7 +35,7 @@ function createTableHeader(tableReference, columnsArray) {
   const headerRow = document.createElement('tr');
   ['bg-gray-700','text-slate-200','sticky','top-0'].forEach(cssClass => headerRow.classList.add(cssClass))
   for (const tableColumnObject of columnsArray) {
-    const headerElement = /*html*/ `<th class= 'text-center'> ${tableColumnObject.columnLabel}</th>`;
+    const headerElement = /*html*/ `<th class= 'text-center'> ${tableColumnObject.columnsLabel}</th>`;
     headerRow.innerHTML += headerElement;
   }
   tableHeaderReference.appendChild(headerRow);

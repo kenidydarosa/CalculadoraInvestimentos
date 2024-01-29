@@ -95,6 +95,14 @@ export function renderProgression(evento) {
         },
       ],
     },
+    options:{
+      plugins:{
+        legend:{
+          position:'center',
+          align:'start'
+        }
+      }
+    }
   });
   progressionChartReference = new Chart(progressionChart, {
     type: 'bar',
@@ -127,6 +135,12 @@ export function renderProgression(evento) {
           stacked: true,
         },
       },
+      plugins:{
+        legend:{
+          position:'bottom',
+          align:'center'
+        }
+      }
     },
   });
   createTable(columnsArray, returnsArray, 'results-table');
